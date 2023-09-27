@@ -1,0 +1,93 @@
+/* My CSS code */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Fake matrix background style */
+.matrix-background {
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Index backrgound */
+.regular-background {
+    background-color: #fefae0;
+    height:100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Style for marquee 1 */
+.marquee1 {
+    color: #00FF00;
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+    white-space: nowrap;
+    padding: 10px;
+    border: 2px solid #00FF00;
+    border-radius: 5px;
+    width: 98%;
+}
+
+/* Style for marquee 2 */
+.marquee2 {
+    color: #00FF00;
+    font-family: "Courier New", monospace;
+    font-size: 50px;
+}
+
+/* Style for marquee 3 */
+.marquee3 {
+    color: #ffb703;
+    font-family: "Arial", sans-serif;
+    font-size: 50px;
+}
+
+h1{
+    text-align: center;
+}
+
+P {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Style for the button */
+#customButton {
+    display: block;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-family: "Arial", sans-serif;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Style for button hover state */
+#customButton:hover {
+    background-color: red; /* Darker blue background color on hover */
+}
+
+
+/* Style for green characters in the fake matrix code */
+.green {
+    color: #00FF00;
+}
