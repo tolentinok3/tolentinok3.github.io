@@ -1,4 +1,6 @@
 /* My CSS code */
+/* Some techniques were searched through youtube/google to achieve the desire look */
+
 body, html {
     margin: 0;
     padding: 0;
@@ -50,7 +52,7 @@ body, html {
     font-size: 50px;
 }
 
-h1{
+h1 {
     text-align: center;
 }
 
