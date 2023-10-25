@@ -1,0 +1,145 @@
+/* CSS Styles*/
+
+/* Box model fix */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* ++++++++++++++++++++++++++++++++++ */
+
+/* clearfix */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* nav bar styling */
+#nav-bar a{
+    color: black;
+    font-weight: semi-bold;
+    text-decoration: none;
+    align-items: center;
+}
+
+#nav-bar a:hover {
+    color: pink;
+    text-decoration: none;
+    font-weight: semi-bold;
+}
+
+#nav-bar ul {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    list-style-type: none;
+    padding: 0;  
+    height: 100%;
+}
+
+#nav-bar li {
+    margin: 0 40px;
+    height: 100%;  
+    margin-top: 15px;
+}
+
+#logo {
+    width: 150px; 
+    height: auto; 
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+/* Footer styles */
+footer {
+    background-color: pink;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.newsletter {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="email"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: lightblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: red;
+}
+
+
