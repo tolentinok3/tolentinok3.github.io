@@ -1,0 +1,19 @@
+/* Grid File */
+
+.container {
+	width: 1170 px;
+	margin: 0 auto;
+}
+
+.container-fluid {
+	width: 100%;
+}
+
+.row{
+	margin-bottom: 5px;
+}
+
+.container .row-fluid {
+	width: 1170 px;
+	margin: 0 auto;
+}

@@ -1,0 +1,108 @@
+/*Style Sheet*/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Clearfix */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+body {
+	background-image: url(https://wallpaperswide.com/download/big_hero_6_disney_baymax-wallpaper-1920x1200.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 60px;
+    font-family: "pf-videotext", sans-serif;
+    text-align: center;
+    color: #9a031e;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: "pf-videotext", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    text-align: center;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 20px;
+    font-family: "ocr-a-std", monospace;
+    text-align: center;
+
+}
+
+p {
+    font-size: 11px;
+    font-family: "ocr-a-std", monospace;
+}
+
+#box{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.link-box {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 50px; 
+    height: 80px; 
+    background-color: #f0f0f0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.link-box a {
+    text-decoration: none;
+    color: #780000;
+    font-weight: normal;
+    font-size: 25px;
+    font-family: "pf-videotext", sans-serif;
+}
+
+.link-box a:hover {
+    color: #ee9b00;
+}
+
+.blinking-word {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        color: #dc562e;
+    }
+    50% {
+        color: #f5bb06;
+    }
+    100% {
+        color: #dc562e;
+    }
+}
+
+
