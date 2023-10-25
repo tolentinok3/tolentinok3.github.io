@@ -233,7 +233,7 @@ header nav {
 	padding-bottom: 30px;
 }
 
-#learn-more {
+#description {
 	width: 300px;
 	text-align: center;
 	margin-left: auto;
@@ -241,7 +241,7 @@ header nav {
 
 }
 
-#learn-more p {
+#description p {
 	padding-bottom: 40px;
 }
 
@@ -255,7 +255,7 @@ a.CTA {
 	border-radius: 2em;
 }
 
-a.learn {
+a.description {
 	background-color:#fff ;
 	font-family: 'Poppins', sans-serif;
 	font-size: 13px;
@@ -339,8 +339,8 @@ https://blog.tubikstudio.com/case-study-educational-interactive-website/
 }
 
 .colC img {
-	height: 300px;
-	border-radius: 14px;
+	height: 250px;
+	border-radius: 10px;
 	filter: drop-shadow(5px 5px 5px #222);
 }
 
