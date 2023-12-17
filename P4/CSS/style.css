@@ -1,0 +1,561 @@
+/* CSS Style Sheet for Project 4*/
+
+/* Global Styling */
+
+img {
+	max-width: 100%;	
+}
+
+/* Box model Fix */
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+
+/* Clear Fix */
+.clearfix:before,
+.clearfix:after {
+	content:" ";
+	display: table;
+}
+
+.clearfix:after	{
+	clear: both;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+/* Style Tile 
+
+COLOURS:
+LIGHT BLUE - #B1C7DE
+BROWN - #865210
+BEIGE - #F2E3D0
+DIRTY WHITE - #F5F2ED
+GREY - #7C7D81
+BLACK - #000000
+
+*/
+
+
+
+/*________ Type Hierarchy Style ________*/
+
+body {
+  font-family: Tofino, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F5F2ED ;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: #B1C7DE;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 55px;
+  font-weight: medium;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: medium;
+  color: #B1C7DE;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 30px;
+  font-weight: regular;
+  color: #865210;
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-size: 30px;
+  font-weight: regular;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+/* Paragraph styles */
+p {
+  font-family: Tondo, sans-serif;
+  font-size: 25px;
+  font-weight: regular;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Link styles */
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+/*________________ Homepage Styles _____________
+________________________________________________*/
+
+/* Slideshow */
+
+.slideshow {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background: none;
+  position: relative;
+}
+
+.carousel-item {
+  height: 100vh;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay-slideshow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000; 
+  opacity: 0.4; 
+}
+
+.center-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.center-content img {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease;
+}
+
+.center-content:hover img {
+  transform: scale(1.1);
+}
+
+/* Introduction */
+
+.introduction {
+  padding-top: 150px;
+  padding-bottom: 100px; 
+}
+
+.introduction h1 {
+  margin-bottom: 20px; 
+}
+
+.description {
+  text-align: left;
+  margin-top: 30px;
+}
+
+
+/* Projects/Services Section */
+
+.projects-section {
+  padding: 50px 0;
+}
+
+.section-heading {
+  color: #7C7D81;
+  cursor: pointer; 
+}
+
+.section-link.active .section-heading {
+  color: #B1C7DE; 
+  text-decoration: underline;
+}
+
+.section-link:hover .section-heading {
+  color: #B1C7DE; 
+  text-decoration: underline; 
+}
+
+/* Projects Gallery */
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+.row.no-gutters {
+  margin: 0;
+}
+
+.col-4 {
+  padding: 0;
+}
+
+.img-fluid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+}
+
+.img-fluid-team {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+.row.no-gutters {
+  margin: 0;
+}
+
+.col-4 {
+  padding: 0;
+  position: relative;
+}
+
+.overlay-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left:0;
+  right:0;
+  background-color: rgba(177, 199, 222, 0.8);
+  transition: opacity 0.1s ease;
+  opacity:0;
+  padding: 20px;
+  height: 30%;
+  text-align: left;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.overlay-title {
+  margin: 0;
+  text-decoration: underline;
+  color: #7C7D81;
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+.project-name {
+  margin: 0;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.team-name {
+  margin: 0;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+/* Partners */
+
+.introduction-2 {
+  padding-top: 150px;
+  padding-bottom: 100px; 
+}
+
+.introduction-2 h1 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+
+.description-2 {
+  text-align: left;
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+/* Related Links */
+
+.related-links-section .related-image {
+  max-width: 100%; 
+  height: auto; 
+}
+
+.related-links-section .colored-box {
+  height: 551px; 
+  background-color: #865210; 
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start; 
+  padding: 90px; 
+}
+
+.first-set {
+  color: #B1C7DE;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.see-process {
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: medium;
+}
+
+.related-links-section .colored-box-1 {
+  height: 551px; 
+  background-color: #B1C7DE; 
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start; 
+  padding: 90px;
+}
+
+.second-set {
+  color: #865210;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.appointment {
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: medium;
+}
+
+
+/*________________ Interior Styles _____________
+________________________________________________*/
+
+/* About Us */
+.about-us {
+  background-color: #865210; /* Brown background color */
+  color: #fff; /* Text color */
+  padding: 160px;
+}
+
+.about-us img {
+  max-width: 60%;
+  height: auto;
+  padding: 30px;
+}
+
+.about-us h1 {
+  text-align: right;
+}
+
+.about-us p {
+  color: white;
+  text-align: left;
+  padding-top: 80px;
+  padding-left: 40px;
+  font-size: 20px;
+  line-height: 2.1;
+}
+
+/* Meet the Team */
+.team {
+  padding: 60px;
+}
+
+.team-description {
+  text-align: center;
+  padding: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 22px;
+}
+
+/* We've been around the block */
+.block {
+  padding: 70px;
+}
+
+.block-description {
+  text-align: center;
+  padding: 70px;
+  margin-left: 30px;
+  margin-right: 20px;
+  font-size: 22px;
+}
+
+
+/*________________ Header Styles _____________
+________________________________________________*/
+
+
+header {
+  padding: 10px;
+  background-color: #B1C7DE;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  flex-grow: 1;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+nav li {
+  margin-left: 15px;
+}
+
+nav a:hover {
+  color: #865210;
+}
+
+.logo-img {
+  width:50px;
+  height:auto;
+  transition: transfrom 0.3s;
+}
+
+.logo-img:hover {
+  transform: scale(1.1);
+}
+
+#cta-button {
+  background-color: #F2E3D0;
+  color: #000000;
+  padding: 5px 15px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: regular;
+  margin-left: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#cta-button:hover {
+  background-color: #865210;
+  color: #F2E3D0;
+}
+
+
+
+/*________________ Footer Styles _____________
+________________________________________________*/
+
+footer {
+    background-color: #7C7D81; 
+    color: #FFFFFF; 
+}
+
+footer img {
+    height: auto;
+    margin: 0 auto;
+    width: 50%;
+    padding-top: 50px;
+    display: block;
+}
+
+.address {
+  text-align: center;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+ul.list-unstyled {
+    padding-top: 80px;
+    padding-bottom: 10px;
+    list-style: none;
+    font-weight: 20px;
+}
+
+ul.list-unstyled li {
+    margin-bottom: 30px;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: lighter;
+    margin-top: 10px; 
+    align-items: center;
+}
+
+/*______ Responsive Layout _________*/
+
+/* Responsive adjustments */
+@media (max-width: 375px) {
+    .introduction .col-md-5,
+    .introduction .col-md-7 {
+        text-align: center;
+    }
+    
+    .introduction h1 {
+        font-size: 24px;
+    }
+    
+    .description {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .projects-section h3 {
+      font-size: 1.1em;
+    }
+
+    .col-2 {
+      padding-right: 80px;
+    }
+
+  .introduction-2 .col-md-5
+  .introduction-2 .col-md-6, {
+    text-align: center;
+  }
+
+  .introduction-2 h1 {
+        font-size: 24px;
+    }
+    
+    .description-2 {
+        font-size: 16px;
+        text-align: center;
+    }
+}
